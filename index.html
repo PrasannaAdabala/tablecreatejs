@@ -276,7 +276,9 @@
         let td3=document.createElement("td");
         let td4=document.createElement("td");
         let td5=document.createElement("td");
-        let td6=document.createElement("td");
+        let td6=document.createElement("img");
+        td6.style.height="100px"
+        td6.style.width="100px"
         let td7=document.createElement("td");
         let td8=document.createElement("td");
         td1.innerHTML=obj[i].id;
@@ -284,7 +286,7 @@
         td3.innerHTML=obj[i].price;
         td4.innerHTML=obj[i].description;
         td5.innerHTML=obj[i].category;
-        td6.innerHTML=obj[i].image;
+        td6.src=obj[i].image;
         td7.innerHTML=obj[i].rating.rate;
         td8.innerHTML=obj[i].rating.count;
         tr1.appendChild(td1);
